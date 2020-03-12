@@ -25,6 +25,14 @@ html, body{
     /*background-position: 100% 0;*/
 }
 
+.hr {
+    height: 2px;
+    background: linear-gradient(to right, #6253e1, #852D91, #e85a19, #f5ce62);
+}
+.hr2{
+    height: 2px;
+    background: linear-gradient(to left, #6253e1, #852D91, #e85a19, #f5ce62);
+}
 
 .container{
     min-height: 100%;
@@ -39,9 +47,6 @@ html, body{
     overflow-wrap: break-word;
 }
 
-.header{
-    background-image: url(images/header-bg.png);
-}
 .sub-container{
     height: 100%;
     width: 50%;
@@ -49,6 +54,9 @@ html, body{
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
+}
+.header{
+    background: url(images/header-bg.png);
 }
 #name{
     font-size: 3rem;
@@ -61,7 +69,7 @@ html, body{
     font-weight: 100;
     margin-bottom: 0;
 }
-.textPart p{
+.description{
     font-size: 110%;
     line-height: 160%;
     color: #898989;
@@ -91,8 +99,15 @@ html, body{
     box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
 }
 
-.biography{
-    background-image: url(images/biography-bg.png);
+.dream{
+    background-image: url(images/dream-bg.png), url(images/biography-bg.png);
+    background-position: right center, left top;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, cover;
+}
+.bigHeading{
+    font-size: 2.5rem;
+    font-weight: bolder;
 }
 .imagePart2{
     display: flex;
@@ -103,7 +118,44 @@ html, body{
     background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
     box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
 }
-
+.experiences{
+    background-image: url(images/latest-work-bg.png);
+    padding: 0 3%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.experiences .sub-container{
+    width: 100%;
+}
+.exp-heading{
+    text-align: center;
+}
+.exp-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.exp-box{
+    width: 30%;
+    padding: 3% 3%;
+    margin: 0 3%;
+    border-width: 0 0 0 6px;
+    border-style: solid;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
+}
+.exp-box.box1{
+    border-image: linear-gradient(to bottom, purple, deepskyblue) 1 100%;
+}
+.exp-box.box2{
+    border-image: linear-gradient(to bottom, orangered, yellow) 1 100%;
+}
+.subHeading{
+    font-size: 125%;
+    font-style: italic;
+    font-weight: 100;
+    color: tomato;
+}
 .latest-work{
     background-image: url(images/latest-work-bg.png);
 }
