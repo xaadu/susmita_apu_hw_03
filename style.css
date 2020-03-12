@@ -5,8 +5,7 @@ html, body{
 }
 
 ::-webkit-scrollbar {
-    display: none;
-    /*width: 1%;*/
+    width: 1%;
 }
 ::-webkit-scrollbar-track {
     /*box-shadow: inset 0 0 5px grey; 
@@ -15,7 +14,7 @@ html, body{
 }
 ::-webkit-scrollbar-thumb {
     /*background: linear-gradient(to bottom, #763ad9, #4f70e0);*/
-    /*border-radius: 50px;
+    border-radius: 50px;
     border: none;
 
     transition: background-image .5s ease-in-out;
@@ -35,6 +34,7 @@ html, body{
     height: 3px;
     bottom: 0;
     background: linear-gradient(to right, #6253e1, #852D91, #e85a19, #f5ce62);
+    direction: rtl;
 }
 
 .hr {
@@ -174,11 +174,16 @@ html, body{
 .latest-work{
     background-image: url(images/footer-bg.png);
 }
-.footer{
-    background-image: url(images/footer-bg.png);
+.client{
+    background-image: url(images/latest-work-bg.png);
 }
 .contact{
 
+}
+.footer{
+    min-height: 20%;
+    max-height: 20%;
+    background-color: black;
 }
 .mgl{
     margin-left: 20%;
