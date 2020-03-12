@@ -1,0 +1,106 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+::-webkit-scrollbar {
+    width: 1%;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #763ad9, #4f70e0);
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(to bottom, #4f70e0, #763ad9);; 
+}
+
+.container{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    /*border: 5px solid tomato;*/
+    background-size: cover;
+}
+
+.header{
+    background-image: url(images/header-bg.png);
+    flex-direction: column;
+}
+.sub-container{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+}
+#name{
+    font-size: 3rem;
+    background: linear-gradient(to right, #763ad9, #4f70e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #ff7961;
+}
+.normalHeading{
+    font-size: 2rem;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+.textPart p{
+    font-size: 120%;
+    line-height: 160%;
+    color: #898989;
+}
+.textPart a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 150px;
+    padding: 1rem 1rem;
+    border-radius: 50px;
+
+    transition: 0.5s;
+    background-image: linear-gradient(to right,#763ad9 0%, #4f70e0 51%, #763ad9 100%);
+    background-size: 200% auto;
+}
+.textPart a:hover{
+    background-position: right center;
+}
+.pi{
+    width: 65%;
+}
+
+.biography{
+    background-image: url(images/biography-bg.png);
+    flex-direction: column;
+    align-items: flex-end;
+}
+.imagePart2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pid{
+    width: 65%;
+}
+
+.latest-work{
+    background-image: url(images/latest-work-bg.png);
+}
+.footer{
+    background-image: url(images/header-bg.png);
+}
+
+.mgl{
+    margin-left: 20%;
+}
+.mgr{
+    margin-right: 20%;
+}
