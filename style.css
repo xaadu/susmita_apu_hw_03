@@ -3,33 +3,44 @@ html, body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 ::-webkit-scrollbar {
     width: 1%;
 }
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
-    border-radius: 50px;
+    /*box-shadow: inset 0 0 5px grey; 
+    border-radius: 50px;*/
+    border: none;
 }
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, #763ad9, #4f70e0);
+    /*background: linear-gradient(to bottom, #763ad9, #4f70e0);*/
     border-radius: 50px;
+    border: none;
+
+    transition: background-image .5s ease-in-out;
+    background-image: linear-gradient(to bottom, #6253e1, #852D91, #e85a19, #f5ce62);
+    /*background-size: 300% 100%;*/
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(to bottom, #4f70e0, #763ad9);; 
+    /*background-position: 100% 0;*/
 }
 
+
 .container{
-    height: 100%;
+    min-height: 100%;
+    height: auto;
     margin: 0;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
     /*border: 5px solid tomato;*/
     background-size: cover;
+    overflow-wrap: break-word;
 }
 
 .header{
     background-image: url(images/header-bg.png);
-    flex-direction: column;
 }
 .sub-container{
     height: 100%;
@@ -44,7 +55,6 @@ html, body{
     background: linear-gradient(to right, #763ad9, #4f70e0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: #ff7961;
 }
 .normalHeading{
     font-size: 2rem;
@@ -52,43 +62,46 @@ html, body{
     margin-bottom: 0;
 }
 .textPart p{
-    font-size: 120%;
+    font-size: 110%;
     line-height: 160%;
     color: #898989;
 }
-.textPart a{
+.btn{
     text-decoration: none;
     color: white;
     text-transform: uppercase;
     font-size: 1.2rem;
     text-align: center;
-    width: 150px;
+    width: 160px;
     padding: 1rem 1rem;
     border-radius: 50px;
+    border: none;
 
-    transition: 0.5s;
-    background-image: linear-gradient(to right,#763ad9 0%, #4f70e0 51%, #763ad9 100%);
-    background-size: 200% auto;
+    transition: all .5s ease-in-out;
+    background-size: 300% 100%;
 }
-.textPart a:hover{
-    background-position: right center;
+.btn:hover{
+    background-position: 100% 0;
 }
 .pi{
-    width: 65%;
+    width: 80%;
+}
+.btn-1{
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
 }
 
 .biography{
     background-image: url(images/biography-bg.png);
-    flex-direction: column;
-    align-items: flex-end;
 }
 .imagePart2{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.pid{
-    width: 65%;
+.btn-2{
+    background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+    box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
 }
 
 .latest-work{
