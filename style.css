@@ -70,7 +70,9 @@ html, body{
 
 /* H E A D E R */
 .header{
-    background: url(images/header-bg.png);
+    background: url(images/header-bg2.png), url(images/header-bg.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: auto, cover;
 }
 #name{
     font-size: 3rem;
@@ -86,7 +88,7 @@ html, body{
 .description{
     font-size: 110%;
     line-height: 160%;
-    color: #898989;
+    color: #808080;
 }
 .btn{
     text-decoration: none;
