@@ -256,7 +256,7 @@ input:focus, textarea:focus, input:hover, textarea:hover{
     width: 81%;
 }
 textarea{
-    height: 140px;
+    height: 100px;
     margin-bottom: 1%;
     font-family: Arial, Helvetica, sans-serif;
 }
