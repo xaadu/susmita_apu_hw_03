@@ -297,9 +297,10 @@ input.single{
     -webkit-text-fill-color: transparent;
     background-size: 100% 300%;
     text-shadow: 5px 5px 10px rgba(133, 45, 145, 0.50);
+    transition: all .4s ease-in-out;
 }
-.fab{
-    background-position: 100% 0;
+.fab:hover{
+    background-position: 0 100%;
 }
 #credit{
     text-align: center;
